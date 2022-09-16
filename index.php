@@ -228,7 +228,7 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_index.php');
               <span class="pull-right"> <a href="<?php echo WEB_URL;?>forgetpassword.php" ><?php echo $_data['forgot_password'];?> </a> </span> </div>
             <hr />
             <div align="center">
-              <button style="width:100%;background-color:#00a65a !important;border-color:#00a65a !important;" type="submit" id="login" class="btn btn-success"><i class="fa fa-key"  ></i>&nbsp;<?php echo $_data['_login'];?></button>
+              <button style="width:100%;background-color:#ffab00 !important;border-color:#cd0000a6 !important;" type="submit" id="login" class="btn btn-success"><i class="fa fa-key"  ></i>&nbsp;<?php echo $_data['_login'];?></button>
             </div>
           </form>
         </div>

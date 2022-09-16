@@ -164,7 +164,7 @@ if($row = mysqli_fetch_array($result)){
   <div class="row home_dash_box">
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_floor; ?></h3>
           <p><?php echo $_data['dashboard_total_floor']; ?></p>
@@ -175,7 +175,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_unit; ?></h3>
           <p><?php echo $_data['dashboard_total_unit']; ?></p>
@@ -186,7 +186,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_owner; ?></h3>
           <p><?php echo $_data['dashboard_total_owner']; ?></p>
@@ -197,7 +197,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_rented; ?></h3>
           <p><?php echo $_data['dashboard_total_rented']; ?></p>
@@ -208,7 +208,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_employee; ?></h3>
           <p><?php echo $_data['dashboard_total_employee']; ?></p>
@@ -219,7 +219,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- ./col end -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_c; ?></h3>
           <p><?php echo $_data['dashboard_total_committee']; ?></p>
@@ -230,7 +230,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_fair); ?></h3>
           <p><?php echo $_data['dashboard_total_fare']; ?></p>
@@ -241,7 +241,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_mc); ?></h3>
           <p><?php echo $_data['dashboard_total_maintenance']; ?></p>
@@ -253,7 +253,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- col start -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_fund); ?></h3>
           <p><?php echo $_data['dashboard_total_fund']; ?></p>
@@ -263,7 +263,7 @@ if($row = mysqli_fetch_array($result)){
     </div>
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_utility); ?></h3>
           <p><?php echo $_data['dashboard_total_owner_utility']; ?></p>
@@ -274,7 +274,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_salary); ?></h3>
           <p><?php echo $_data['dashboard_report']; ?></p>
@@ -285,7 +285,7 @@ if($row = mysqli_fetch_array($result)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_complain; ?></h3>
           <p><?php echo $_data['dashboard_total_complain']; ?></p>

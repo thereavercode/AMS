@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['owner_list'] 							 	= "Owner List ";
 $_data['add_new_form_field_text_1'] 				= "Owner Name";

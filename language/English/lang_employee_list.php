@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['employee_list'] 							= "Employee List ";
 $_data['employee_details'] 							= "Employee Details";

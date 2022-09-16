@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['text_1'] 		= "Language Modification Panel";
 $_data['text_2'] 		= "Year Entry Form";

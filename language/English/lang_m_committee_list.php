@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['add_new_m_committee'] 						= "Management Member List";
 $_data['m_committee_details'] 						= "Management Committee Member Details";

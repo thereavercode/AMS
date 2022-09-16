@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['add_new_floor_top_title'] 					= "Add New Floor";
 $_data['update_floor_top_title'] 					= "Update Floor";

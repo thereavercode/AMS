@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['list_title'] 							= "Email / SMS List";
 $_data['add_new_floor_information_breadcam'] 	= "Email/SMS";

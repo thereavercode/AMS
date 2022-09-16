@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['dashboard_title'] 					= "Dashboard";
 $_data['dashboard_more_info'] 				= "More Info";

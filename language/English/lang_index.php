@@ -1,13 +1,13 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
-$_data['application_title'] 			= "SAKO Apartment Management System";
-$_data['application_heading_1'] 		= "SAKO";
+$_data['application_title'] 			= "ZUMO Apartment Management System";
+$_data['application_heading_1'] 		= "ZUMO";
 $_data['application_heading_2'] 		= "Apartment Management System";
 $_data['wrong_login_msg'] 				= "Wrong email or password.";
-$_data['enter_login_details'] 			= "Enter Login Details";
+$_data['enter_login_details'] 			= "Enter Login Info";
 
 $_data['select_type'] 					= "Select User Type";
 $_data['user_1'] 						= "Admin";

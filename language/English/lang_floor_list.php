@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['floor_list_title'] 						= "Floor List";
 $_data['add_new_floor_information_breadcam'] 	= "Floor Information";

@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['add_new_fund'] 						= "Add New Fund";
 $_data['fund'] 								= "Fund";

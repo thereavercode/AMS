@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['rent_list'] 								= "Rent List";
 $_data['fare_details'] 								= "Rent Details";

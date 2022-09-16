@@ -102,7 +102,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
   <div class="row home_dash_box">
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_unit; ?></h3>
           <p><?php echo $_data['text_1'];?></p>
@@ -113,7 +113,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_rented; ?></h3>
           <p><?php echo $_data['text_2'];?></p>
@@ -124,7 +124,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_employee; ?></h3>
           <p><?php echo $_data['text_3'];?></p>
@@ -135,7 +135,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_fair); ?></h3>
           <p><?php echo $_data['text_4'];?></p>
@@ -146,7 +146,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_owner_utility); ?></h3>
           <p><?php echo $_data['text_5'];?></p>
@@ -157,7 +157,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_mc); ?></h3>
           <p><?php echo $_data['text_7'];?></p>
@@ -168,7 +168,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_fund); ?></h3>
           <p><?php echo $_data['text_8'];?></p>
@@ -179,7 +179,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $_data['infomation'];?></h3>
           <p><?php echo $building_name;?></p>
@@ -230,7 +230,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
                   <div id="nurse_view_<?php echo $row['complain_id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
-                        <div class="modal-header green_header">
+                        <div class="modal-header red_header">
                           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
                           <h3 class="modal-title"><?php echo $_data['o_text_1_1_1'];?></h3>
                         </div>
@@ -277,7 +277,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
   <div id="help_desk" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header green_header">
+        <div class="modal-header red_header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
           <h3 class="modal-title"><?php echo $_data['infomation'];?></h3>
         </div>

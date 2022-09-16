@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['text_1'] 		= "Member Type Setup";
 $_data['text_2'] 		= "Member Type Entry Form";

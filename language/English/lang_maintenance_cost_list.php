@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['m_cost'] 						= "Maintenance Cost";
 $_data['m_cost_details'] 				= "Maintenance Cost Details";

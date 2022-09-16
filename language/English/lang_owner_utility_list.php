@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['add_new_owner_list_utility_title'] 			= "Owner Utility List";
 $_data['owner_utility'] 							= "Owner Utility";

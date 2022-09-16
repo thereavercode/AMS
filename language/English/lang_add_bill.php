@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['text_1'] 		= "Add New Bill";
 $_data['text_1_1'] 		= "Update Bill";

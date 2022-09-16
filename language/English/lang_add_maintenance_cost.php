@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['add_title_text'] 				= "Add New Maintenance Cost";
 $_data['add_msg'] 						= "Added Maintenance Cost Successfully";

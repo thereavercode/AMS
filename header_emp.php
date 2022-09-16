@@ -45,7 +45,7 @@ $page_name = $ams_helper->curPageUrlInfo('page');
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 <?php include(ROOT_PATH.'/partial/header_script.php'); ?>
 </head>
-<body class="skin-green sidebar-mini">
+<body class="skin-yellow sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 <header class="main-header">

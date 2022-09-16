@@ -2,7 +2,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['text_1'] 			= "Tenant Notice Board";
 $_data['text_12'] 			= "Employee Notice Board";

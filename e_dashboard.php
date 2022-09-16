@@ -134,7 +134,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
   <div class="row home_dash_box">
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $ams_helper->currency($localization, $total_amount); ?></h3>
           <p><?php echo $_data['salary_statement'];?></p>
@@ -145,7 +145,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_renter; ?></h3>
           <p><?php echo $_data['rented_details'];?></p>
@@ -156,7 +156,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_employee; ?></h3>
           <p><?php echo $_data['member_details'];?></p>
@@ -167,7 +167,7 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
     <!-- ./col end -->
     <!-- col start -->
     <div class="col-lg-3 col-xs-6">
-      <div class="small-box bg-green">
+      <div class="small-box bg-red">
         <div class="inner">
           <h3><?php echo $total_leave; ?></h3>
           <p><?php echo $_data['e_total_owner'];?></p>

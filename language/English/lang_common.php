@@ -1,7 +1,7 @@
 <?php
 //Website Menu Language Conversion
 //English Package
-//copyright: sakosys.com
+//copyright: zumosys.com
 
 $_data['save_button_text'] 					= "Save Information";
 $_data['update_button_text'] 				= "Update Information";
