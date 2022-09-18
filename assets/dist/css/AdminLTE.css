@@ -1433,7 +1433,7 @@ a:focus {
   border-radius: 7px;
   position: relative;
   text-align: center;
-  padding: 3px 0;
+  padding: 0px 0;
   color: #fff;
   display: block;
   z-index: 10;
