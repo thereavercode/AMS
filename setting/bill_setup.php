@@ -1,5 +1,5 @@
 <?php 
-include('../config.php');
+
 include('../header.php');
 include(ROOT_PATH.'language/'.$lang_code_global.'/lang_bill_setup.php');
 if(!isset($_SESSION['objLogin'])){

@@ -1420,16 +1420,17 @@ a:focus {
  * --------------------
  */
 .small-box {
-  border-radius: 2px;
+  border-radius: 7px;
   position: relative;
   display: block;
   margin-bottom: 20px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 6px rgb(0 0 0);
 }
 .small-box > .inner {
   padding: 10px;
 }
 .small-box > .small-box-footer {
+  border-radius: 7px;
   position: relative;
   text-align: center;
   padding: 3px 0;
@@ -1473,7 +1474,7 @@ a:focus {
 }
 .small-box .icon img {
 	-moz-transition:-moz-transform 0.5s ease-in; 
-	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s cubic-bezier(0.42, 0, 0, 0.99);
 	-o-transition:-o-transform 0.5s ease-in;
 }
 .small-box:hover {

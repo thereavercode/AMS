@@ -1,6 +1,6 @@
 <?php
 define('_AMSCODESECURITY', '16343942');
-define('CURRENCY', 'KES');
+define('CURRENCY', 'Ksh. ');
 define('WEB_URL', 'http://localhost:8080/AMS/');
 define('ROOT_PATH', 'C:\xampp\htdocs\AMS/');
 

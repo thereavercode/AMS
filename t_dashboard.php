@@ -186,14 +186,6 @@ if($row_notice_board = mysqli_fetch_array($result_notice)){
         <div class="box-body"> <?php echo $notice; ?> </div>
       </div>
     </div>
-    <div class="col-lg-12 col-xs-12" id="rules">
-      <div class="box box-success">
-        <div class="box-header with-border">
-          <h3 class="box-title"><i class="fa fa-gavel" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo $_data['c_apartment_rules']; ?></h3>
-        </div>
-        <div class="box-body"> <?php echo $building_rules; ?> </div>
-      </div>
-    </div>
   </div>
 </section>
 
