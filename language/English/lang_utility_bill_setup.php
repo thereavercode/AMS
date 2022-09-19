@@ -6,6 +6,7 @@
 $_data['text_1'] 		= "Utility Bill Setup";
 $_data['text_2'] 		= "Utility Bill Entry Form";
 $_data['text_3'] 		= "Gas Bill Per Flat";
+$_data['text_10'] 		= "Water Bill Per Unit";
 $_data['text_4'] 		= "Security Bill Per Flat";
 $_data['text_5'] 		= "Added Utility Bill Information Successfully";
 $_data['text_6'] 		= "Updated Utility Bill Information Successfully";
