@@ -57,7 +57,9 @@ if(!isset($_SESSION['objLogin'])){
 			<td><?php echo ($row['bill_status']=='1') ? '<label class="label label-success">'.$_data['text_21'].'</label>' : '<label class="label label-danger">'.$_data['text_22'].'</label>'; ?></td>
             <td><?php echo $row['paid_date']; ?></td>
 			<td>
-            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="<?php echo $_data['text_23'];?>" data-toggle="tooltip" href="<?php echo WEB_URL;?>t_dashboard/invoice.php?rentid=<?php echo $row['f_id']; ?>"><i class="fa fa-file-text-o"></i></a> <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['f_id']; ?>').modal('show');" data-original-title="Details <?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
+            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="<?php echo $_data['text_23'];?>" data-toggle="tooltip" href="<?php echo WEB_URL;?>t_dashboard/invoice.php?rentid=<?php echo $row['f_id']; ?>"><i class="fa fa-file-text-o"></i></a> 
+            <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['f_id']; ?>').modal('show');" data-original-title="Details <?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
+            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="#Invoice" data-toggle="tooltip" href="https://tinypesa.com/lipay"><i class="fa fa-bank"></i></a>
             <div id="nurse_view_<?php echo $row['f_id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">

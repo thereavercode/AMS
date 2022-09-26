@@ -113,7 +113,11 @@ $page_name = $ams_helper->curPageUrlInfo('page');
             <!-- User image -->
             <li class="user-header"> <img src="<?php echo $image; ?>" class="img-circle" alt="User Image" />
               <p> <?php echo $_SESSION['objLogin']['name']; ?> <small>
-                <?php if($_SESSION['login_type'] == '1'){echo $_data['user_admin'];} else if($_SESSION['login_type'] == '2'){echo $_data['user_owner'];} else if($_SESSION['login_type'] == '3'){echo $_data['user_employee'];} else if($_SESSION['login_type'] == '4'){echo $_data['user_tenant'];} else {echo $_data['user_super_admin'];}?>
+                <?php if($_SESSION['login_type'] == '1'){echo $_data['user_admin'];} 
+                        else if($_SESSION['login_type'] == '2'){echo $_data['user_owner'];} 
+                          else if($_SESSION['login_type'] == '3'){echo $_data['user_employee'];} 
+                            else if($_SESSION['login_type'] == '4'){echo $_data['user_tenant'];} 
+                      else {echo $_data['user_super_admin'];}?>
                 <br/>
                 <span style="font-size:14px;color:#fff;"><?php echo $building_name; ?><span></p>
               </small> </li>
@@ -188,11 +192,13 @@ $page_name = $ams_helper->curPageUrlInfo('page');
           <li class="<?php if($page_name != '' && $page_name == 'addfair'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>fair/addfair.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_rent']; ?></a></li>
         </ul>
       </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'add_owner_utility' || $page_name == 'owner_utility_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-gear"></i> <span><?php echo $_data['menu_owner_utility']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
+    <!--
+        <li class="treeview <?php if($page_name != '' && $page_name == 'add_owner_utility' || $page_name == 'owner_utility_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-gear"></i> <span><?php echo $_data['menu_owner_utility']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'owner_utility_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>owner_utility/owner_utility_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_owner_utility_list']; ?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'add_owner_utility'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>owner_utility/add_owner_utility.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_owner_utility']; ?></a></li>
         </ul>
+    -->
       </li>
       <li class="treeview <?php if($page_name != '' && $page_name == 'add_maintenance_cost' || $page_name == 'maintenance_cost_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-cut"></i> <span><?php echo $_data['menu_maintenance_cost']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
@@ -200,42 +206,50 @@ $page_name = $ams_helper->curPageUrlInfo('page');
           <li class="<?php if($page_name != '' && $page_name == 'add_maintenance_cost'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>maintenance/add_maintenance_cost.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_maintenance_cost']; ?></a></li>
         </ul>
       </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'add_m_committee' || $page_name == 'm_committee_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-user"></i> <span><?php echo $_data['menu_management_committee']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
+      <!--
+        <li class="treeview <?php if($page_name != '' && $page_name == 'add_m_committee' || $page_name == 'm_committee_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-user"></i> <span><?php echo $_data['menu_management_committee']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'm_committee_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>management/m_committee_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_member_list']; ?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'add_m_committee'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>management/add_m_committee.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_member']; ?></a></li>
         </ul>
       </li>
+    -->
       <li class="treeview <?php if($page_name != '' && $page_name == 'add_fund' || $page_name == 'fund_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-money"></i> <span><?php echo $_data['menu_fund']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'fund_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>fund/fund_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_fund_list']; ?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'add_fund'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>fund/add_fund.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_fund']; ?></a></li>
         </ul>
       </li>
+    <!--
       <li class="treeview <?php if($page_name != '' && $page_name == 'add_bill' || $page_name == 'bill_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-bank"></i> <span><?php echo $_data['menu_bill'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'bill_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>bill/bill_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_bill_list'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'add_bill'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>bill/add_bill.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_bill'];?></a></li>
         </ul>
       </li>
+    -->
       <li class="treeview <?php if($page_name != '' && $page_name == 'addcomplain' || $page_name == 'complainlist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-comments"></i> <span><?php echo $_data['menu_complain'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'complainlist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>complain/complainlist.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_complain_list'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'addcomplain'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>complain/addcomplain.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_complain'];?></a></li>
         </ul>
       </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'addvisitor' || $page_name == 'visitorlist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-car"></i> <span><?php echo $_data['menu_visitor'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
+      <!--
+        <li class="treeview <?php if($page_name != '' && $page_name == 'addvisitor' || $page_name == 'visitorlist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-car"></i> <span><?php echo $_data['menu_visitor'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'visitorlist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>visitor/visitorlist.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_visitor_list'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'addvisitor'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>visitor/addvisitor.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_visitor'];?></a></li>
         </ul>
       </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'addmeeting' || $page_name == 'meetinglist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-handshake-o"></i> <span><?php echo $_data['menu_meeting'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
+    -->
+      <!--
+        <li class="treeview <?php if($page_name != '' && $page_name == 'addmeeting' || $page_name == 'meetinglist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-handshake-o"></i> <span><?php echo $_data['menu_meeting'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'meetinglist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>meeting/meetinglist.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_meeting_list'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'addmeeting'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>meeting/addmeeting.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_meeting'];?></a></li>
         </ul>
       </li>
+    -->
       <li class="treeview <?php if($page_name != '' && $page_name == 'notice' || $page_name == 'employee_notice' || $page_name == 'owner_notice'){echo 'active';}?>"> <a href="#"> <i class="fa fa-bullhorn" aria-hidden="true"></i> <span><?php echo $_data['notice_board'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'notice'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>notice/notice.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['notice_board_1'];?></a></li>
@@ -256,7 +270,8 @@ $page_name = $ams_helper->curPageUrlInfo('page');
           <li class="<?php if($page_name != '' && $page_name == 'salary_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/salary_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['salary_report_text'];?></a></li>
         </ul>
       </li>
-      
+
+     <!--To allow only the SuperUser to access advanced system settings-->
 	   <?php if((int)$_SESSION['login_type'] == 5){ ?>
 	  <li class="treeview <?php if($page_name != '' && $page_name == 'cleardata' || $page_name == 'visitorlist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-database"></i> <span><?php echo $_data['database_left_menu'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">

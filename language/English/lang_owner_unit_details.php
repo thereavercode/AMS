@@ -3,7 +3,7 @@
 //English Package
 //copyright: zumosys.com
 
-$_data['text_1'] 				= "Unit List";
+$_data['text_1'] 				= "House List";
 $_data['text_2'] 				= "Floor No";
 $_data['text_3'] 				= "Unit No";
 $_data['text_4'] 				= "Unit Details";

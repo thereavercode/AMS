@@ -142,15 +142,15 @@ $page_name = $ams_helper->curPageUrlInfo('page');
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu">
       <li class="<?php if($page_name != '' && $page_name == 'o_dashboard'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard.php"><i class="fa fa-line-chart"></i> <span><?php echo $_data['text_1']; ?></span></a> </li>
-       <li class="<?php if($page_name != '' && $page_name == 'unitdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/unitdetails.php"><i class="fa fa-server"></i> <span><?php echo $_data['text_2']; ?></span></a></li>
-       <li class="<?php if($page_name != '' && $page_name == 'tenantdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/tenantdetails.php"><i class="fa fa-user-o"></i><span><?php echo $_data['text_3']; ?></span></a></li>
+      <li class="<?php if($page_name != '' && $page_name == 'unitdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/unitdetails.php"><i class="fa fa-server"></i> <span><?php echo $_data['text_2']; ?></span></a></li>
+      <li class="<?php if($page_name != '' && $page_name == 'tenantdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/tenantdetails.php"><i class="fa fa-user-o"></i><span><?php echo $_data['text_3']; ?></span></a></li>
       <li class="<?php if($page_name != '' && $page_name == 'employeedetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/employeedetails.php"><i class="fa fa-users"></i> <span><?php echo $_data['text_4']; ?></span></a></li>
-	  <li class="<?php if($page_name != '' && $page_name == 'fairdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/fairdetails.php"><i class="fa fa-money"></i> <span><?php echo $_data['text_5']; ?></span></a></li>
-	  <li class="<?php if($page_name != '' && $page_name == 'owner_utility_details'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/owner_utility_details.php"><i class="fa fa-gear"></i> <span><?php echo $_data['text_6']; ?></span></a></li>
-	  <li class="<?php if($page_name != '' && $page_name == 'maintenance_cost'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/maintenance_cost.php"><i class="fa fa-wrench"></i> <span><?php echo $_data['text_7']; ?></span></a></li>
-	   <li class="<?php if($page_name != '' && $page_name == 'fund_status'){echo 'active';}?>"><a target="_blank" href="<?php echo WEB_URL; ?>o_dashboard/fund_status.php"><i class="fa fa-money"></i> <span><?php echo $_data['text_8']; ?></span></a></li>
-	   <li class="<?php if($page_name != '' && $page_name == 'complainlist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/complainlist.php"><i class="fa fa-gavel"></i> <span><?php echo $_data['text_88']; ?></span></a></li>
-       <li class="<?php if($page_name != '' && $page_name == 'rented_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/rented_report.php"><i class="fa fa-bar-chart"></i> <span><?php echo $_data['text_9']; ?></span></a></li>
+	    <li class="<?php if($page_name != '' && $page_name == 'fairdetails'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/fairdetails.php"><i class="fa fa-money"></i> <span><?php echo $_data['text_5']; ?></span></a></li>
+	  <!--  <li class="<?php if($page_name != '' && $page_name == 'owner_utility_details'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/owner_utility_details.php"><i class="fa fa-gear"></i> <span><?php echo $_data['text_6']; ?></span></a></li>-->
+	    <li class="<?php if($page_name != '' && $page_name == 'maintenance_cost'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/maintenance_cost.php"><i class="fa fa-wrench"></i> <span><?php echo $_data['text_7']; ?></span></a></li>
+	    <li class="<?php if($page_name != '' && $page_name == 'fund_status'){echo 'active';}?>"><a target="_blank" href="<?php echo WEB_URL; ?>o_dashboard/fund_status.php"><i class="fa fa-money"></i> <span><?php echo $_data['text_8']; ?></span></a></li>
+	    <li class="<?php if($page_name != '' && $page_name == 'complainlist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/complainlist.php"><i class="fa fa-gavel"></i> <span><?php echo $_data['text_88']; ?></span></a></li>
+     <li class="<?php if($page_name != '' && $page_name == 'rented_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>o_dashboard/rented_report.php"><i class="fa fa-bar-chart"></i> <span><?php echo $_data['text_9']; ?></span></a></li>
     </ul>
   </section>
   <!-- /.sidebar -->

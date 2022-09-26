@@ -84,7 +84,7 @@ $_data['branch_list'] 						= "Building List";
 /* Owner Left Menu Start */
 
 $_data['text_1'] 							= "Owner Dashboard";
-$_data['text_2'] 							= "Unit Details";
+$_data['text_2'] 							= "House Details";
 $_data['text_3'] 							= "Renter Details";
 $_data['text_4'] 							= "Employee Details Info";
 $_data['text_5'] 							= "Rent Statement";

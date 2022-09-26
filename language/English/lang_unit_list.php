@@ -12,6 +12,6 @@ $_data['unit_details']							= "Unit Details";
 $_data['add_unit']								= "Add Unit";
 $_data['add_unit_successfully'] 				= "Added Unit Information Successfully";
 $_data['update_unit_successfully'] 				= "Updated Unit Information Successfully";
-$_data['details_info'] 							= "Details Infromation";
+$_data['details_info'] 							= "Details Information";
 $_data['confirm'] 								= "Are you sure you want to delete this Unit ?";
 ?>
