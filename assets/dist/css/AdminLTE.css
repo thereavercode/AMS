@@ -1074,6 +1074,7 @@ a:focus {
   height: 175px;
   padding: 10px;
   text-align: center;
+  border-radius: inherit;
 }
 .navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
   z-index: 5;
@@ -1119,6 +1120,7 @@ a:focus {
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer {
   background-color: #f9f9f9;
   padding: 10px;
+  border-radius: inherit;
 }
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer:before,
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
@@ -1219,6 +1221,7 @@ a:focus {
     left: auto;
     border: 1px solid #ddd;
     background: #fff;
+    border-radius: 10px;
   }
 }
 /*

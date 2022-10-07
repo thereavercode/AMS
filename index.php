@@ -143,7 +143,8 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_index.php');
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><?php echo $_data['application_title']; ?></title>
+<title><?php echo $_data['application_title'];?></title>
+<link rel="shortcut icon" href="img/ZVMlogo.png">
 <!-- BOOTSTRAP STYLES-->
 <link href="assets/css/bootstrap.css" rel="stylesheet" />
 <!-- FONTAWESOME STYLES-->
@@ -165,7 +166,7 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_index.php');
   <br/>
   <div class="row text-center ">
     <div class="col-md-12"><br/>
-      <span style="font-size:50px;font-weight:bold;color:#fff;"><?php echo $_data['application_heading_1']; ?></span> <span style="font-size:18px;color:#fff;"><?php echo $_data['application_heading_2']; ?></span></div>
+      <span style="font-size:50px;font-weight:bold;color:#fbc27b;"><?php echo $_data['application_heading_1']; ?></span> <span style="font-size:18px;color:#d9edf7;"><?php echo $_data['application_heading_2']; ?></span></div>
   </div>
   <br/>
   <div class="row ">
@@ -228,7 +229,7 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_index.php');
               <span class="pull-right"> <a href="<?php echo WEB_URL;?>forgetpassword.php" ><?php echo $_data['forgot_password'];?> </a> </span> </div>
             <hr />
             <div align="center">
-              <button style="width:100%;background-color:#ffab00 !important;border-color:#cd0000a6 !important;" type="submit" id="login" class="btn btn-success"><i class="fa fa-key"  ></i>&nbsp;<?php echo $_data['_login'];?></button>
+              <button style="width:100%;background-color:#b97c00eb !important;border-color:#002b36 !important;" type="submit" id="login" class="btn btn-success"><i class="fa fa-key"  ></i>&nbsp;<?php echo $_data['_login'];?></button>
             </div>
           </form>
         </div>

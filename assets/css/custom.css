@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
-	background-image:url('../../img/bg.jpg');
-	background-size:cover;
+    background-image:url('../../img/bg3.jpg');
+    background-size:cover;
 }
 
  #wrapper {
@@ -33,8 +33,8 @@ body {
     min-height:1200px;
 }
 .panel-heading{
-	background:#ffae00ea !important;
-	color:#fff !important;
+	background: #002b36 !important;
+	color: #edb20c !important;
 	font-size:16px;
 }
 .text-center {
