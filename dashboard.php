@@ -1,4 +1,4 @@
-<?php
+ <?php
 include('header.php');
 if($_SESSION['login_type'] != '1' && $_SESSION['login_type'] != '5'){
 	header("Location: " . WEB_URL . "logout.php");
