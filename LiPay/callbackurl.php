@@ -17,6 +17,15 @@ $PhoneNumber = $callbackContent->Body->stkCallback->CallbackMetadata->Item[4]->V
 
 if ($ResultCode == 0) {
 
+    //Use localhost DB
+    define('DB_HOSTNAME', 'localhost');
+    define('DB_USERNAME', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_DATABASE', 'tinypesa');
+
+$link = new mysqli(DB_HOSTNAME,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+
+ /* 
     //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
@@ -27,23 +36,23 @@ if ($ResultCode == 0) {
     $query_builder = TRUE;
     // Connect to DB
     $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
+*/
 
 
 
     // Check connection
-    if ($conn->connect_error) {
-        die("<h1>Connection failed:</h1> " . $conn->connect_error);
+    if ($link->connect_error) {
+        die("<h1>Connection failed:</h1> " . $link->connect_error);
     }
    else{
 
       
-    $insert = $conn->query("INSERT INTO tinypesa(CheckoutRequestID,ResultCode,amount,MpesaReceiptNumber,PhoneNumber) VALUES ('$CheckoutRequestID','$ResultCode','$Amount','$MpesaReceiptNumber','$PhoneNumber')");
+    $insert = $link->query("INSERT INTO tinypesa(CheckoutRequestID,ResultCode,amount,MpesaReceiptNumber,PhoneNumber) VALUES ('$CheckoutRequestID','$ResultCode','$Amount','$MpesaReceiptNumber','$PhoneNumber')");
       if($conn->query == TRUE ){
           echo"New record created";
       } else{
-          echo"Error:" .$conn->error;
+          echo"Error:" .$link->error;
       }
-    $conn = null;
+    $link = null;
 }
 }

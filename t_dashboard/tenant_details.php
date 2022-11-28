@@ -35,8 +35,8 @@ if(!isset($_SESSION['objLogin'])){
               <th><?php echo $_data['text_11'];?></th>
               <th><?php echo $_data['text_3'];?></th>
               <th><?php echo $_data['text_4'];?></th>
-			  <th><?php echo $_data['text_20'];?></th>
-			  <th><?php echo $_data['text_24'];?></th>
+			        <th><?php echo $_data['text_20'];?></th>
+			        <th><?php echo $_data['text_24'];?></th>
               <th><?php echo $_data['action_text'];?></th>
             </tr>
           </thead>
@@ -58,8 +58,8 @@ if(!isset($_SESSION['objLogin'])){
             <td><?php echo $row['paid_date']; ?></td>
 			<td>
             <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="<?php echo $_data['text_23'];?>" data-toggle="tooltip" href="<?php echo WEB_URL;?>t_dashboard/invoice.php?rentid=<?php echo $row['f_id']; ?>"><i class="fa fa-file-text-o"></i></a> 
-            <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['f_id']; ?>').modal('show');" data-original-title="Details <?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
-            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="#Invoice" data-toggle="tooltip" href="https://tinypesa.com/lipay"><i class="fa fa-bank"></i></a>
+            <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['f_id']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
+            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="Pay" data-toggle="tooltip" href="https://tinypesa.com/lipay"><i class="fa fa-bank"></i></a>
             <div id="nurse_view_<?php echo $row['f_id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">

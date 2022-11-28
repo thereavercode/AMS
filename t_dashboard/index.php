@@ -1,12 +1,27 @@
-<?php include('../header_ten.php'); 
-include(ROOT_PATH.'language/'.$lang_code_global.'/lang_payment.php');
+<?php include('../header_ten.php'); ?>
+<?php
+include(ROOT_PATH.'language/'.$lang_code_global.'/lang_rented_r_report.php');
 include(ROOT_PATH.'language/'.$lang_code_global.'/lang_common.php');
-include(ROOT_PATH.'language/'.$lang_code_global.'/lang_add_fare.php');
 if(!isset($_SESSION['objLogin'])){
 	header("Location: " . WEB_URL . "logout.php");
 	die();
-    }
+}
+$month_id = "";
+$xyear = '';
+$button_text=$_data['submit'];
+
+if(isset($_GET['mid'])){
+	$month_id = $_GET['mid'];
+}
+if(isset($_GET['xyear'])){
+	$yid = $_GET['xyear'];
+}
+if(!isset($_SESSION['objLogin'])){
+	header("Location: ".WEB_URL."logout.php");
+	die();
+}
 ?>
+
 <section class="content-header">
   <h1><?php echo $_data['text_1'];?> </h1>
   <ol class="breadcrumb">
@@ -16,18 +31,49 @@ if(!isset($_SESSION['objLogin'])){
 </section>
 <!-- Main content -->
 <section class="content">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lipa Na M-Pesa</title>
+    <link rel="shortcut icon" href="img/ZVMlogo.png">
     <link rel="stylesheet" href="style.css">
-    
-    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" ">
+    <script
+      type=" text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <style>
+
+    </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="holder1">
+            <small>M-donate</small>
+        </div>
+        <div class="holder2 ">
+            <a href="./records.php">
+            <button class="btn btn-success"> <span> Transactions</span> </button>
+
+            </a>
+        </div>
+    </div>
     <div class="host">
-            <h1 class="hero ">Pay your <br> Rent</h1>
+        <div class="subhost1 ">
+
+            <h1 class="hero ">Make a <br> Donation</h1>
+
+
+
+        </div>
+        <div class="subhost2">
             <div class="card mt-5 px-3 py-4">
                 <div class="d-flex flex-row justify-content-around">
                     <div class="mpesa"><span>Mpesa </span></div>
@@ -35,60 +81,54 @@ if(!isset($_SESSION['objLogin'])){
                     <div><span>Card</span></div>
                 </div>
                 <div class="media mt-4 pl-2">
-                    <img src="./images/1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="85" /> <br>
-                    
+                    <img src="./images/1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" />
                     <div class="media-body">
                         <h6 class="mt-1">Enter Amount & Number</h6>
                     </div>
-                    <?php
-				    $result = mysqli_query($link,"Select *,fl.floor_no as fl_floor,u.unit_no as u_unit,r.r_name,m.month_name from tbl_add_fair f inner join tbl_add_floor fl on fl.fid = f.floor_no inner join tbl_add_unit u on u.uid = f.unit_no inner join tbl_add_rent r on r.r_unit_no = f.unit_no inner join tbl_add_month_setup m on m.m_id = f.month_id where f.unit_no = ".(int)$_SESSION['objLogin']['r_unit_no']." and f.branch_id = ".(int)$_SESSION['objLogin']['branch_id']." order by f.month_id ASC");
-				        while($row = mysqli_fetch_assoc($result)){
-					    $image = WEB_URL . 'img/no_image.jpg';	
-			            if(file_exists(ROOT_PATH . '/img/upload/' . $_SESSION['objLogin']['image']) && $_SESSION['objLogin']['image'] != ''){
-				        $image = WEB_URL . 'img/upload/' . $_SESSION['objLogin']['image'];
-			            }
-                    ?>
-                 
                 </div>
-            
                 <div class="media mt-3 pl-2">
                     <!--bs5 input-->
                     <form class="row g-3" action="./index.php" method="POST">
-                        
-                        <?php
-                            if($row['bill_status']=='0'){
-                                $ams_helper->currency($localization, $row['total_rent']);
-                                $snow = $row['total_rent'];
-                            }
 
-                        
-                         } mysqli_close($link);$link = NULL; ?>
-                         <br>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Amount</label>
-                            <input readonly="read-only" type="text" class="form-control" name="amount" placeholder="<?php echo $snow?>">
+                            <input type="text" class="form-control" name="amount" placeholder="Enter Amount">
                         </div>
-                        <br>
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" name="phone" placeholder="e.g: 0712345678">
+                            <input type="text" class="form-control" name="phone" placeholder="Enter Phone Number">
                         </div>
 
                         <div class="col-12">
-                            <button type="submit" class="btn btn-success" name="submit" value="submit">pay</button>
+                            <button type="submit" class="btn btn-success" name="submit" value="submit">Donate</button>
                         </div>
                     </form>
                     <!--bs5 input-->
                 </div>
             </div>
+
+
+        </div>
     </div>
     </div>
-       
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    </script>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src=""></script>
+    <script type="text/Javascript"></script>
+</body>
+
+</html>
+
+
+
+
+
 <?php
 
 if(isset($_POST['submit'])){
 
-    $amount = $snow; //Amount to transact 
+    $amount = $_POST['amount']; //Amount to transact 
     $phone = $_POST['phone']; // Phone number paying
     
     $Account_no = 'ZUMO KE'; // Enter account number optional
@@ -124,5 +164,4 @@ if(isset($_POST['submit'])){
 
 
 ?>
-
 <?php include('../footer.php'); ?>

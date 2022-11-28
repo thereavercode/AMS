@@ -37,10 +37,11 @@ $page_name = $ams_helper->curPageUrlInfo('page');
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title><?php echo $building_name; ?></title>
-<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-<?php include(ROOT_PATH.'/partial/header_script.php'); ?>
+  <meta charset="UTF-8">
+  <title><?php echo $building_name; ?></title>
+  <link rel="shortcut icon" href="img/ZVMlogo.png">
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  <?php include(ROOT_PATH.'/partial/header_script.php'); ?>
 </head>
 <body class="skin-yellow sidebar-mini">
 <!-- Site wrapper -->
@@ -141,8 +142,9 @@ $page_name = $ams_helper->curPageUrlInfo('page');
       <li class="<?php if($page_name != '' && $page_name == 't_dashboard'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard.php"> <i class="fa fa-line-chart"></i><span><?php echo $_data['menu_dashboard'];?></span></a> </li>
         <li class="<?php if($page_name != '' && $page_name == 'tenant_details'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/tenant_details.php"> <i class="fa fa-file-text-o"></i><span><?php echo $_data['rented_statement'];?></span></a></li>
         <li class="<?php if($page_name != '' && $page_name == 'unit_details'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/unit_details.php"> <i class="fa fa-list"></i><span><?php echo $_data['unit_details'];?></span></a></li>
-		<li class="<?php if($page_name != '' && $page_name == 'complainlist' || $page_name == 'addcomplain'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/complainlist.php"> <i class="fa fa-comments"></i><span><?php echo $_data['renter_complain_details'];?></span></a></li>
-		<li class="<?php if($page_name != '' && $page_name == 'r_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/r_report.php"> <i class="fa fa-bar-chart-o"></i><span><?php echo $_data['rented_report'];?></span></a></li>
+		    <li class="<?php if($page_name != '' && $page_name == 'complainlist' || $page_name == 'addcomplain'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/complainlist.php"> <i class="fa fa-comments"></i><span><?php echo $_data['renter_complain_details'];?></span></a></li>
+		    <li class="<?php if($page_name != '' && $page_name == 'r_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>t_dashboard/r_report.php"> <i class="fa fa-bar-chart-o"></i><span><?php echo $_data['rented_report'];?></span></a></li>
+        <li class="<?php if($page_name != '' && $page_name == 'payments'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>LiPay/index.php"> <i class="fa fa-bank"></i><span><?php echo 'Payments';?></span></a></li>
       </li>
     </ul>
   </section>

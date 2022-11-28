@@ -15,7 +15,7 @@ if(!isset($_SESSION['objLogin'])){
 	header("Location: ".WEB_URL."logout.php");
 	die();
 }
-//
+//Allow only for SU Login
 if(isset($_SESSION['login_type']) && ((int)$_SESSION['login_type'] != 5 && (int)$_SESSION['login_type'] != 1)){
 	header("Location: ".WEB_URL."logout.php");
 	die();

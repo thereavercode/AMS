@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Transactions</title>
+    <link rel="shortcut icon" href="img/ZVMlogo.png">
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
@@ -14,7 +15,7 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <br>
-    <h4 align="center">Donation Transaction Records 🎁</h4>
+    <h4 align="center">Mpesa Transaction Records 🎁</h4>
     <br><br>
     <div class="card-body">
         <div class="table-responsive">
@@ -29,8 +30,13 @@
   </thead>
   <tbody>
     <?php
+    define('DB_HOSTNAME', 'localhost');
+    define('DB_USERNAME', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_DATABASE', 'tinypesa');
+    $link = new mysqli(DB_HOSTNAME,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
-    //Get Heroku ClearDB connection information
+/* //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
     $cleardb_username = $cleardb_url["user"];
@@ -38,10 +44,14 @@
     $cleardb_db = substr($cleardb_url["path"],1);
     $active_group = 'default';
     $query_builder = TRUE;
-    // Connect to DB
-    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+  */
+   
 
-    $query1= mysqli_query($conn,"SELECT*from tinypesa");
+
+    // Connect to DB
+ //   $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
+    $query1= mysqli_query($link,"SELECT * FROM tinypesa");
     while($row=mysqli_fetch_array($query1))
     {
         ?>

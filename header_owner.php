@@ -36,6 +36,7 @@ $page_name = $ams_helper->curPageUrlInfo('page');
 <head>
 <meta charset="UTF-8">
 <title><?php echo $building_name; ?></title>
+<link rel="shortcut icon" href="img/ZVMlogo.png">
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 <?php include(ROOT_PATH.'/partial/header_script.php'); ?>
 </head>
