@@ -59,7 +59,6 @@ if(!isset($_SESSION['objLogin'])){
 			<td>
             <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="<?php echo $_data['text_23'];?>" data-toggle="tooltip" href="<?php echo WEB_URL;?>t_dashboard/invoice.php?rentid=<?php echo $row['f_id']; ?>"><i class="fa fa-file-text-o"></i></a> 
             <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['f_id']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
-            <a target="_blank" class="btn btn-info ams_btn_special" data-original-title="Pay" data-toggle="tooltip" href="https://tinypesa.com/lipay"><i class="fa fa-bank"></i></a>
             <div id="nurse_view_<?php echo $row['f_id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">

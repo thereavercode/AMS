@@ -57,7 +57,7 @@ function printContent(area,title){
                   <th><?php echo $_data['text_5'];?></th>
                   <th><?php echo $_data['text_6'];?></th>
                   <th><?php echo $_data['text_7'];?></th>
-				  <th><?php echo $_data['text_77'];?></th>
+				          <th><?php echo $_data['text_77'];?></th>
                   <th><?php echo $_data['text_8'];?></th>
                   <th><?php echo $_data['text_9'];?></th>
                   <th><?php echo $_data['text_10'];?></th>
@@ -127,8 +127,8 @@ function printContent(area,title){
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
-				  <th>&nbsp;</th>
-                  <th style="color:red;"><?php echo $ams_helper->currency($localization, $rent_per_month_sub_total); ?></th>
+				          <th>&nbsp;</th>
+          <th style="color:red;"><?php echo $ams_helper->currency($localization, $rent_per_month_sub_total); ?></th>
 				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $gas_per_month_sub_total); ?></th>
 				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $electric_per_month_sub_total); ?></th>
 				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $water_per_month_sub_total); ?></th>

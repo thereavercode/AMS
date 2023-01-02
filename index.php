@@ -161,10 +161,6 @@ include(ROOT_PATH.'language/'.$lang_code_global.'/lang_index.php');
 <!-- BOOTSTRAP SCRIPTS -->
 </head>
 <body>
-	<!-- Preloader -->
-<div class="preloader">
-  <div class="cssload-speeding-wheel"></div>
-</div>
 <div class="container"> <br/>
   <br/>
   <br/>

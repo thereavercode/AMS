@@ -26,8 +26,13 @@ if(!isset($_SESSION['objLogin'])){
 </head>
 
 <body>
-    <div class="host">
-            <h1 class="hero ">Pay your <br> Rent</h1>
+        <div class="holder1">
+            <small>LiPay Gateway</small>
+        </div>
+    <div class="host"><div class="subhost1 ">
+        <h1 class="hero ">Pay your <br> Rent</h1>
+    </div>
+    <div class="subhost2">
             <div class="card mt-5 px-3 py-4">
                 <div class="d-flex flex-row justify-content-around">
                     <div class="mpesa"><span>Mpesa </span></div>
@@ -40,6 +45,7 @@ if(!isset($_SESSION['objLogin'])){
                     <div class="media-body">
                         <h6 class="mt-1">Enter Amount & Number</h6>
                     </div>
+                    <div>
                     <?php
 				    $result = mysqli_query($link,"Select *,fl.floor_no as fl_floor,u.unit_no as u_unit,r.r_name,m.month_name from tbl_add_fair f inner join tbl_add_floor fl on fl.fid = f.floor_no inner join tbl_add_unit u on u.uid = f.unit_no inner join tbl_add_rent r on r.r_unit_no = f.unit_no inner join tbl_add_month_setup m on m.m_id = f.month_id where f.unit_no = ".(int)$_SESSION['objLogin']['r_unit_no']." and f.branch_id = ".(int)$_SESSION['objLogin']['branch_id']." order by f.month_id ASC");
 				        while($row = mysqli_fetch_assoc($result)){
@@ -48,7 +54,7 @@ if(!isset($_SESSION['objLogin'])){
 				        $image = WEB_URL . 'img/upload/' . $_SESSION['objLogin']['image'];
 			            }
                     ?>
-                 
+                
                 </div>
             
                 <div class="media mt-3 pl-2">
@@ -60,14 +66,18 @@ if(!isset($_SESSION['objLogin'])){
                                 $ams_helper->currency($localization, $row['total_rent']);
                                 $snow = $row['total_rent'];
                             }
+                            else if($row['bill_status']=='1'){
+                                $snow = "No Rent Due";
+                            }
 
                         
                          } mysqli_close($link);$link = NULL; ?>
-                         <br>
+                        <br>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Amount</label>
                             <input readonly="read-only" type="text" class="form-control" name="amount" placeholder="<?php echo $snow?>">
                         </div>
+                        
                         <br>
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label">Phone Number</label>
@@ -81,6 +91,7 @@ if(!isset($_SESSION['objLogin'])){
                     <!--bs5 input-->
                 </div>
             </div>
+        </div>
     </div>
     </div>
        
